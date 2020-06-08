@@ -11,3 +11,11 @@
 <view>当前计数：{{count}}</view>
 <button size="mini" bindtap="add">+</button>
 <button size="mini" bindtap="incl">-</button>
+
+//获取用户信息的方式2
+<button  open-type="getUserInfo" 
+        bindtap="getuser">
+        获取授权 </button>
+
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
