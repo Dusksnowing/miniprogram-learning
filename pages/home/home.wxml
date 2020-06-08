@@ -1,5 +1,25 @@
 <!--pages/home/home.wxml-->
-<view>home</view>
 
+<!-- test组件 -->
 
+<!-- 1、基本使用 --行内元素 --\n可以换行 -->
+<text>hello world</text>
+<text>hello world\n</text>
+<text>hello world</text>
 
+<!-- 2、selectable能否选中，默认false -->
+<!-- 写法一 -->
+<text selectable="{{true}}">hello world</text>
+<!-- 写法二 -->
+<text selectable>hello world\n</text>   
+
+<!-- 3、space 空格大小 -->
+<!-- ensp : 半个中文字符大小 -->
+<!-- emsp : 一个中文字符大小 -->
+<text>hello world\n</text>
+<text space="nbsp">hello world\n</text>
+<text space="ensp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+
+<!-- 4、decode 解码 -->
+<text decode>5 &gt; 3</text>
