@@ -1,21 +1,5 @@
 <!--pages/home/home.wxml-->
-<!-- 1、数据绑定 -->
-<view>{{name}}</view>
-<view>年龄：{{age}}</view>
+<view>home</view>
 
-<!-- wx:for -->
-<view wx:for="{{students}}" wx:key="key">{{item.name}}</view>
 
-<!-- 事件监听 -->
-<view>--------------------</view>
-<view>当前计数：{{count}}</view>
-<button size="mini" bindtap="add">+</button>
-<button size="mini" bindtap="incl">-</button>
 
-//获取用户信息的方式2
-<button  open-type="getUserInfo" 
-        bindtap="getuser">
-        获取授权 </button>
-
-<open-data type="userNickName"></open-data>
-<open-data type="userAvatarUrl"></open-data>

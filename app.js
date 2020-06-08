@@ -3,17 +3,6 @@ App({
 
   //页面初始化时
   onLaunch() {
-    // 获取用户信息,异步
-    wx.getUserInfo({     
-      success: res => {
-        console.log(res)
-      }
-    })
-    console.log(`init`)
-    setTimeout(()=>{
-      const err = new Error;
-      throw err;
-    }, 2000)
   },
   
   //界面显示出来的周期函数
