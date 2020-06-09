@@ -1,17 +1,20 @@
 <!--pages/home/home.wxml-->
-<view>button</view>
+<view>view-image</view>
 
-<!-- 1、size、type、plain -->
-<button>按钮</button>
-<button size="mini">按钮</button>
-<button size="mini" type="primary">按钮</button>
-<button size="mini" type="warn">按钮</button>
-<button plain size="mini">按钮</button>
+<!-- 1、hover-class停留时间 -->
+<!-- 2、hover-stop-propagation 组织事件冒泡 -->
+<view class="box1" hover-class="box1hover" >
+  <view class="box2" 
+        hover-class="box2hover" 
+        hover-start-time="1000"
+        hover-stop-propagation></view>
+</view>
 
-<!-- 2、loading、disable -->
-<button type="primary" size="mini" loading>按钮</button>
-<button type="warn" size="mini" disabled>按钮</button>
+<!-- 3、image -->
+<image src="/assets/nature12.jpeg"/>
 
-<!-- 3、自定义点击效果 hover-class 不能使用type 否则会失效-->
-<button size="mini" hover-class="pressed">测试</button>
+<!-- 4、选择图片并展示 -->
+<view>选择图片并展示</view>
+<button bindtap="chooseImage">选择图片</button>
+<image src="{{imgurl}}"></image>
 
