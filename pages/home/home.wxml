@@ -1,20 +1,20 @@
 <!--pages/home/home.wxml-->
-<view>view-image</view>
+<view>input</view>
 
-<!-- 1、hover-class停留时间 -->
-<!-- 2、hover-stop-propagation 组织事件冒泡 -->
-<view class="box1" hover-class="box1hover" >
-  <view class="box2" 
-        hover-class="box2hover" 
-        hover-start-time="1000"
-        hover-stop-propagation></view>
-</view>
+<input value="请输入..."/>
 
-<!-- 3、image -->
-<image src="/assets/nature12.jpeg"/>
+<input password/>
 
-<!-- 4、选择图片并展示 -->
-<view>选择图片并展示</view>
-<button bindtap="chooseImage">选择图片</button>
-<image src="{{imgurl}}"></image>
+<!-- 弹出的键盘类型 -->
+<input type="number"/>
 
+<!-- 2、滚动 scroll-view:局部滚动 -->
+<!-- ① 水平 scroll-x-->
+<scroll-view class="box1" scroll-x>
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- ② 垂直 scroll-y-->
+<scroll-view class="box2" scroll-y>
+  <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>

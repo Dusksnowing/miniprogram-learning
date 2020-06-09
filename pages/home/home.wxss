@@ -1,18 +1,27 @@
 /* pages/home/home.wxss */
 
 .box1{
-  width: 200px;
-  height: 200px;
-  background-color: violet;
+  background-color: hotpink;
+  white-space: nowrap;
 }
-.box2{
+
+.item1{
   width: 100px;
   height: 100px;
-  background-color: turquoise;
+  background-color: lavender;
+  margin: 10px;
+  display: inline-block;
 }
-.box1hover{
-  background-color: tomato;
+
+.box2{
+  margin-top: 30px;
+  background-color: lightblue;
+  height: 400px;
 }
-.box2hover{
-  background-color: teal;
+
+.item2{
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin: 10px;
 }
