@@ -12,6 +12,6 @@
 <button type="primary" size="mini" loading>按钮</button>
 <button type="warn" size="mini" disabled>按钮</button>
 
-<!-- 3、自定义点击效果 hover-class-->
-<button size="mini" type="warn" hover-class="pressed">测试</button>
+<!-- 3、自定义点击效果 hover-class 不能使用type 否则会失效-->
+<button size="mini" hover-class="pressed">测试</button>
 
