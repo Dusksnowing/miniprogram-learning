@@ -1,5 +1,17 @@
 <!--pages/home/home.wxml-->
-<view>home</view>
+<view>button</view>
 
+<!-- 1、size、type、plain -->
+<button>按钮</button>
+<button size="mini">按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<button plain size="mini">按钮</button>
 
+<!-- 2、loading、disable -->
+<button type="primary" size="mini" loading>按钮</button>
+<button type="warn" size="mini" disabled>按钮</button>
+
+<!-- 3、自定义点击效果 hover-class-->
+<button size="mini" type="warn" hover-class="pressed">测试</button>
 

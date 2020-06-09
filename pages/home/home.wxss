@@ -1,4 +1,6 @@
 /* pages/home/home.wxss */
-.title{
-  color: red;
+
+.pressed{
+  background: rosybrown;
+  color: white;
 }
